@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D89C3F51D49EE48001576CF /* DetourAlloc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D89C3E41D49EE48001576CF /* DetourAlloc.cpp */; };
+		3D89C3F61D49EE48001576CF /* DetourCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D89C3E71D49EE48001576CF /* DetourCommon.cpp */; };
+		3D89C3F71D49EE48001576CF /* DetourInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D89C3E91D49EE48001576CF /* DetourInit.cpp */; };
+		3D89C3F81D49EE48001576CF /* DetourNavMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D89C3EC1D49EE48001576CF /* DetourNavMesh.cpp */; };
+		3D89C3F91D49EE48001576CF /* DetourNavMeshBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D89C3EE1D49EE48001576CF /* DetourNavMeshBuilder.cpp */; };
+		3D89C3FA1D49EE48001576CF /* DetourNavMeshQuery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D89C3F01D49EE48001576CF /* DetourNavMeshQuery.cpp */; };
+		3D89C3FB1D49EE48001576CF /* DetourNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D89C3F21D49EE48001576CF /* DetourNode.cpp */; };
+		3D89C3FF1D49EF85001576CF /* PathFinding.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D89C3FD1D49EF85001576CF /* PathFinding.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D374FDE1D3E1EB200B98B41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D374FE01D3E1EB200B98B41 /* libPathFinding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPathFinding.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D89C3E41D49EE48001576CF /* DetourAlloc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourAlloc.cpp; sourceTree = SOURCE_ROOT; };
+		3D89C3E51D49EE48001576CF /* DetourAlloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourAlloc.h; sourceTree = SOURCE_ROOT; };
+		3D89C3E61D49EE48001576CF /* DetourAssert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourAssert.h; sourceTree = SOURCE_ROOT; };
+		3D89C3E71D49EE48001576CF /* DetourCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourCommon.cpp; sourceTree = SOURCE_ROOT; };
+		3D89C3E81D49EE48001576CF /* DetourCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourCommon.h; sourceTree = SOURCE_ROOT; };
+		3D89C3E91D49EE48001576CF /* DetourInit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourInit.cpp; sourceTree = SOURCE_ROOT; };
+		3D89C3EA1D49EE48001576CF /* DetourInit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourInit.h; sourceTree = SOURCE_ROOT; };
+		3D89C3EB1D49EE48001576CF /* DetourMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourMath.h; sourceTree = SOURCE_ROOT; };
+		3D89C3EC1D49EE48001576CF /* DetourNavMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMesh.cpp; sourceTree = SOURCE_ROOT; };
+		3D89C3ED1D49EE48001576CF /* DetourNavMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMesh.h; sourceTree = SOURCE_ROOT; };
+		3D89C3EE1D49EE48001576CF /* DetourNavMeshBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshBuilder.cpp; sourceTree = SOURCE_ROOT; };
+		3D89C3EF1D49EE48001576CF /* DetourNavMeshBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshBuilder.h; sourceTree = SOURCE_ROOT; };
+		3D89C3F01D49EE48001576CF /* DetourNavMeshQuery.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNavMeshQuery.cpp; sourceTree = SOURCE_ROOT; };
+		3D89C3F11D49EE48001576CF /* DetourNavMeshQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNavMeshQuery.h; sourceTree = SOURCE_ROOT; };
+		3D89C3F21D49EE48001576CF /* DetourNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DetourNode.cpp; sourceTree = SOURCE_ROOT; };
+		3D89C3F31D49EE48001576CF /* DetourNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourNode.h; sourceTree = SOURCE_ROOT; };
+		3D89C3F41D49EE48001576CF /* DetourStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetourStatus.h; sourceTree = SOURCE_ROOT; };
+		3D89C3FC1D49EF85001576CF /* NavMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavMesh.h; sourceTree = SOURCE_ROOT; };
+		3D89C3FD1D49EF85001576CF /* PathFinding.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathFinding.cpp; sourceTree = SOURCE_ROOT; };
+		3D89C3FE1D49EF85001576CF /* PathFinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathFinding.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D374FDD1D3E1EB200B98B41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D374FD71D3E1EB200B98B41 = {
+			isa = PBXGroup;
+			children = (
+				3D374FE21D3E1EB200B98B41 /* FindPathing */,
+				3D374FE11D3E1EB200B98B41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D374FE11D3E1EB200B98B41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D374FE01D3E1EB200B98B41 /* libPathFinding.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D374FE21D3E1EB200B98B41 /* FindPathing */ = {
+			isa = PBXGroup;
+			children = (
+				3D89C3FC1D49EF85001576CF /* NavMesh.h */,
+				3D89C3FD1D49EF85001576CF /* PathFinding.cpp */,
+				3D89C3FE1D49EF85001576CF /* PathFinding.h */,
+				3D89C3E41D49EE48001576CF /* DetourAlloc.cpp */,
+				3D89C3E51D49EE48001576CF /* DetourAlloc.h */,
+				3D89C3E61D49EE48001576CF /* DetourAssert.h */,
+				3D89C3E71D49EE48001576CF /* DetourCommon.cpp */,
+				3D89C3E81D49EE48001576CF /* DetourCommon.h */,
+				3D89C3E91D49EE48001576CF /* DetourInit.cpp */,
+				3D89C3EA1D49EE48001576CF /* DetourInit.h */,
+				3D89C3EB1D49EE48001576CF /* DetourMath.h */,
+				3D89C3EC1D49EE48001576CF /* DetourNavMesh.cpp */,
+				3D89C3ED1D49EE48001576CF /* DetourNavMesh.h */,
+				3D89C3EE1D49EE48001576CF /* DetourNavMeshBuilder.cpp */,
+				3D89C3EF1D49EE48001576CF /* DetourNavMeshBuilder.h */,
+				3D89C3F01D49EE48001576CF /* DetourNavMeshQuery.cpp */,
+				3D89C3F11D49EE48001576CF /* DetourNavMeshQuery.h */,
+				3D89C3F21D49EE48001576CF /* DetourNode.cpp */,
+				3D89C3F31D49EE48001576CF /* DetourNode.h */,
+				3D89C3F41D49EE48001576CF /* DetourStatus.h */,
+			);
+			path = FindPathing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D374FDF1D3E1EB200B98B41 /* FindPathing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D374FE91D3E1EB300B98B41 /* Build configuration list for PBXNativeTarget "FindPathing" */;
+			buildPhases = (
+				3D374FDC1D3E1EB200B98B41 /* Sources */,
+				3D374FDD1D3E1EB200B98B41 /* Frameworks */,
+				3D374FDE1D3E1EB200B98B41 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindPathing;
+			productName = FindPathing;
+			productReference = 3D374FE01D3E1EB200B98B41 /* libPathFinding.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D374FD81D3E1EB200B98B41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = No.1;
+				TargetAttributes = {
+					3D374FDF1D3E1EB200B98B41 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D374FDB1D3E1EB200B98B41 /* Build configuration list for PBXProject "FindPathing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 3D374FD71D3E1EB200B98B41;
+			productRefGroup = 3D374FE11D3E1EB200B98B41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D374FDF1D3E1EB200B98B41 /* FindPathing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D374FDC1D3E1EB200B98B41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D89C3F51D49EE48001576CF /* DetourAlloc.cpp in Sources */,
+				3D89C3F71D49EE48001576CF /* DetourInit.cpp in Sources */,
+				3D89C3FA1D49EE48001576CF /* DetourNavMeshQuery.cpp in Sources */,
+				3D89C3F61D49EE48001576CF /* DetourCommon.cpp in Sources */,
+				3D89C3FF1D49EF85001576CF /* PathFinding.cpp in Sources */,
+				3D89C3F81D49EE48001576CF /* DetourNavMesh.cpp in Sources */,
+				3D89C3FB1D49EE48001576CF /* DetourNode.cpp in Sources */,
+				3D89C3F91D49EE48001576CF /* DetourNavMeshBuilder.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3D374FE71D3E1EB300B98B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D374FE81D3E1EB300B98B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D374FEA1D3E1EB300B98B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = PathFinding;
+				PRODUCT_NAME = PathFinding;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3D374FEB1D3E1EB300B98B41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					arm64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_MODULE_NAME = PathFinding;
+				PRODUCT_NAME = PathFinding;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D374FDB1D3E1EB200B98B41 /* Build configuration list for PBXProject "FindPathing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D374FE71D3E1EB300B98B41 /* Debug */,
+				3D374FE81D3E1EB300B98B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D374FE91D3E1EB300B98B41 /* Build configuration list for PBXNativeTarget "FindPathing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D374FEA1D3E1EB300B98B41 /* Debug */,
+				3D374FEB1D3E1EB300B98B41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D374FD81D3E1EB200B98B41 /* Project object */;
+}
