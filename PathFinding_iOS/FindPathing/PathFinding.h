@@ -23,7 +23,7 @@ extern "C" void UnLoadNavData();
 
 extern "C" bool FindNavPath(float *start, float *end, int jflag, float *&outarr, int &len);
 
-extern "C" bool Raycast(float *start, float *end, int jflag, float *&outarr, float *&edgeDir);
+extern "C" bool Raycast(float *start, float *end, int jflag, float *&outarr, float *&normalDir);
 
 extern "C" bool IsPosInBlock(float *jpos);
 

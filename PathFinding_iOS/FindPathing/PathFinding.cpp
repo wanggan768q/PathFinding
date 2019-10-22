@@ -120,8 +120,8 @@ bool FindNavPath(float *start, float *end, int jflag, float *&outarr, int &len)
         {
             // raycast找直线到终点被阻挡的点
             float *endBlock = NULL;
-            float *edgeDir = NULL;
-            Raycast(start, end, jflag, endBlock, edgeDir);
+			float* normalDir = NULL;
+			Raycast(start, end, jflag, endBlock, normalDir);
             float *end = endBlock;
             if (end == NULL)
             {
@@ -209,10 +209,10 @@ bool FindNavPath(float *start, float *end, int jflag, float *&outarr, int &len)
     return findPath;
 }
 
-bool Raycast(float *start, float *end, int jflag, float *&outarr, float *&oEdgeDir)
+bool Raycast(float *start, float *end, int jflag, float *&outarr, float *&oNormalDir)
 {
-    float *resultArr = NULL;
-    float edgeDir[3] = {0};
+	float* resultArr = NULL;
+	float normalDir[3] = { 0 };
     try
     {
         // 起始位置,终点位置
@@ -255,12 +255,12 @@ bool Raycast(float *start, float *end, int jflag, float *&outarr, float *&oEdgeD
             //return NULL;
         }
 
-        float hitNormal[3];
+		float edgeDir[3] = { 0 };
         float t;
         dtPolyRef path[MAX_POLYS];
         int pathCount;
         // raycast判断是否阻挡
-        navMeshQuery->raycast(m_startRef, m_spos, m_epos, &m_filter, &t, hitNormal, path, &pathCount, MAX_POLYS, edgeDir);
+		navMeshQuery->raycast(m_startRef, m_spos, m_epos, &m_filter, &t, normalDir, path, &pathCount, MAX_POLYS, edgeDir);
 
         int const arrayLen = 3; // 数组长度
         float result[arrayLen];
@@ -328,8 +328,8 @@ bool Raycast(float *start, float *end, int jflag, float *&outarr, float *&oEdgeD
         std::cerr << "Java native interface call c++ Raycast() method error" << std::endl;
     }
 
-    oEdgeDir = new float[3];
-    memcpy(oEdgeDir, edgeDir, sizeof(float) * 3);
+	oNormalDir = new float[3];
+	memcpy(oNormalDir, normalDir, sizeof(float) * 3);
     return true;
     //return resultArr;
 }
